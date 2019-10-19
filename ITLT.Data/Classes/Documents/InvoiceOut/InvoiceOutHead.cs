@@ -3,7 +3,7 @@
 
     using System.Collections.Generic;
 
-    public class InvoiceOutHead
+    public class InvoiceOutHead : DocumentHead
     {
         public virtual ICollection<InvoiceOutTable> Rows { get; set; }
     }

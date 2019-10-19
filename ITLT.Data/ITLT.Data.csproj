@@ -48,18 +48,21 @@
     <Compile Include="Classes\Documents\InvoiceOut\InvoiceOutTable.cs" />
     <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\EntitySync.cs" />
+    <Compile Include="Classes\References\ExpenseItem.cs" />
+    <Compile Include="Classes\References\RevenueItem.cs" />
+    <Compile Include="Classes\References\Good.cs" />
     <Compile Include="Classes\References\Contract.cs" />
     <Compile Include="Classes\References\Contragent.cs" />
+    <Compile Include="Classes\References\_Reference.cs" />
+    <Compile Include="Interfaces\Documents\IDocument.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IEntityBase.cs" />
     <Compile Include="Interfaces\IEntityBaseT.cs" />
     <Compile Include="Interfaces\IEntitySync.cs" />
+    <Compile Include="Interfaces\References\IReference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Documents\" />
-    <Folder Include="Interfaces\References\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    public class InvoiceInHead
+    public class InvoiceInHead : DocumentHead
     {
         public virtual ICollection<InvoiceInTable> Rows { get; set; }
     }

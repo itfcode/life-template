@@ -8,3 +8,4 @@ J:\BBGit\life-template\ITLT.ExtentionMethods\bin\Debug\ITLT.ExtentionMethods.pdb
 J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITF.ExtentionMethods.csproj.CoreCompileInputs.cache
 J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.dll
 J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.pdb
+J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITF.ExtentionMethods.csprojAssemblyReference.cache

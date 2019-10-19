@@ -1,8 +1,11 @@
 ﻿namespace ITLT.Data.Classes
 {
 
-    public class InvoiceOutTable
+    public class InvoiceOutTable : DocumentTable
     {
+
+        public Good Good { get; set; }
+
         public InvoiceOutHead Head { get; set; }
     }
 }

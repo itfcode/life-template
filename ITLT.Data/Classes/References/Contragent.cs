@@ -3,9 +3,8 @@
 
     using System.Collections.Generic;
 
-    public class Contragent : Entity
+    public class Contragent : Reference
     {
-        public string Name { get; set; }
 
         public string ITIN { get; set; }
 
