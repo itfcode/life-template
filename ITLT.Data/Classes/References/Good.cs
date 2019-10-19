@@ -1,7 +1,7 @@
 ﻿namespace ITLT.Data.Classes
 {
     /// <summary>
-    /// RU: Товары и услуги; EN: Goods and Services 
+    /// EN: Goods and Services;  RU: Товары и услуги
     /// </summary>
     public class Good : Reference
     {
@@ -17,12 +17,12 @@
         public int? ExpenseItemId { get; set; }
 
         /// <summary>
-        /// RU: Статья Доходов по умолчанию; EN: Revenue Item by deafult
+        /// EN: Revenue Item by deafult; RU: Статья Доходов по умолчанию; 
         /// </summary>
         public virtual RevenueItem RevenueItem { get; set; }
 
         /// <summary>
-        /// RU: Статья Расходов по умолчанию EN: Expense Item by deafult
+        /// EN: Expense Item by deafult; RU: Статья Расходов по умолчанию 
         /// </summary>
         public virtual ExpenseItem ExpenseItem { get; set; }
     }

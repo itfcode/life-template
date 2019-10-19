@@ -3,7 +3,7 @@
     using System.Collections.Generic;
 
     /// <summary>
-    /// Статья расходов 
+    /// EN: Revenue Item; RU: Статья Доходов 
     /// </summary>
     public class RevenueItem : Reference
     {
