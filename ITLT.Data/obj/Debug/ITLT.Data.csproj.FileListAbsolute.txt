@@ -1,0 +1,6 @@
+I:\@GitHub\life-template\ITLT\ITLT.Data\bin\Debug\ITLT.Data.dll
+I:\@GitHub\life-template\ITLT\ITLT.Data\bin\Debug\ITLT.Data.pdb
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITLT.Data.csproj.CoreCompileInputs.cache
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITLT.Data.dll
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITLT.Data.pdb
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITLT.Data.csprojAssemblyReference.cache

@@ -1,0 +1,11 @@
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.Data\bin\Debug\ITF.Data.dll
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.Data\bin\Debug\ITF.Data.pdb
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.Data\obj\Debug\ITF.Data.dll
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.Data\obj\Debug\ITF.Data.pdb
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.Data\obj\Debug\ITF.Data.csprojResolveAssemblyReference.cache
+I:\@GitHub\life-template\ITLT\ITLT.Data\bin\Debug\ITF.Data.dll
+I:\@GitHub\life-template\ITLT\ITLT.Data\bin\Debug\ITF.Data.pdb
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITF.Data.csprojAssemblyReference.cache
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITF.Data.csproj.CoreCompileInputs.cache
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITF.Data.dll
+I:\@GitHub\life-template\ITLT\ITLT.Data\obj\Debug\ITF.Data.pdb
