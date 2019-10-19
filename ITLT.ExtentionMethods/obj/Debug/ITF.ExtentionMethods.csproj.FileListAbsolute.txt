@@ -1,0 +1,5 @@
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.ExtentionMethods\bin\Debug\ITF.ExtentionMethods.dll
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.ExtentionMethods\bin\Debug\ITF.ExtentionMethods.pdb
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.ExtentionMethods\obj\Debug\ITF.ExtentionMethods.dll
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.ExtentionMethods\obj\Debug\ITF.ExtentionMethods.pdb
+I:\@GitHub\extension-methods\ExtensionMethodsVsn1.0.1\ITF.ExtentionMethods\obj\Debug\ITF.ExtentionMethods.csprojResolveAssemblyReference.cache
