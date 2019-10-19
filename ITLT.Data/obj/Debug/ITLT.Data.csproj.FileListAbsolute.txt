@@ -9,5 +9,3 @@ J:\BBGit\life-template\ITLT.Data\bin\Debug\ITLT.Data.pdb
 J:\BBGit\life-template\ITLT.Data\obj\Debug\ITLT.Data.csproj.CoreCompileInputs.cache
 J:\BBGit\life-template\ITLT.Data\obj\Debug\ITLT.Data.dll
 J:\BBGit\life-template\ITLT.Data\obj\Debug\ITLT.Data.pdb
-J:\BBGit\life-template\ITLT.Data\bin\Debug\ITLT.Data.dll.CodeAnalysisLog.xml
-J:\BBGit\life-template\ITLT.Data\bin\Debug\ITLT.Data.dll.lastcodeanalysissucceeded
