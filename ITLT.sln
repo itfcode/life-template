@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.Data", "ITLT.Data\ITLT.Data.csproj", "{343811AE-903C-4627-8BEA-B1EBA97B9B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITF.ExtentionMethods", "ITLT.ExtentionMethods\ITF.ExtentionMethods.csproj", "{5532FEBE-11AD-4475-ADD8-A7F5ED130DB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.ExtentionMethods", "ITLT.ExtentionMethods\ITLT.ExtentionMethods.csproj", "{5532FEBE-11AD-4475-ADD8-A7F5ED130DB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,6 +10,5 @@
 
         public string Description { get; set; }
 
-        public virtual Contragent Contragent { get; set; }
     }
 }
