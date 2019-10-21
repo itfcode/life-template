@@ -23,7 +23,7 @@
 
         T Update<T>(object id, Action<T> updateStrategy) where T : class, new();
 
-        // ICollection<T> Update<T>(object id, Action<T> updateStrategy) where T : class, new();
+        ICollection<T> Update<T>(ICollection<T> items, Action<T> updateStrategy) where T : class, new();
 
         void Delete<T>(object id) where T : class, new();
 

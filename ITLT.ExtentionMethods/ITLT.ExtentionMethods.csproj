@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\IListExtensions.cs" />
     <Compile Include="DateTimeOffset\DateTimeOffsetExtentions.cs" />
     <Compile Include="DateTimeOffset\DateTimeOffsetNullExtentions.cs" />
     <Compile Include="DateTime\DateTimeExtentions.cs" />

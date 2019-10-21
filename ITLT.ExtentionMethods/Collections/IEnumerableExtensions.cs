@@ -4,11 +4,12 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
 
     public static class IEnumerableExtensions
     {
 
-        #region Union of several methods 
+        #region Union of several LINQ methods 
 
         public static IEnumerable<TResult> SelectDistinct<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
         {
@@ -30,13 +31,20 @@
             return first.Union(second, comparer).ToList();
         }
 
-        #endregion
-
         public static List<TResult> SelectToList<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
         {
             return source.Select(selector).ToList();
         }
 
+        #endregion
+
+        /// <summary>
+        /// Works like linq-method 'OrderBy' 
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="keySelectors"></param>
+        /// <returns></returns>
         public static IOrderedEnumerable<TSource> SortBy<TSource>(this IEnumerable<TSource> source, params Func<TSource, object>[] keySelectors)
         {
             var result = source.OrderBy(keySelectors[0]);
@@ -49,6 +57,14 @@
             return result;
         }
 
+        /// <summary>
+        /// Works like linq-method 'OrderByDescending' 
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <typeparam name="TKey"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="keySelectors"></param>
+        /// <returns></returns>
         public static IOrderedEnumerable<TSource> SortByDescending<TSource, TKey>(this IEnumerable<TSource> source, params Func<TSource, object>[] keySelectors)
         {
             var result = source.OrderByDescending(keySelectors[0]);
@@ -81,6 +97,39 @@
             }
 
             return items;
+        }
+
+        /// <summary>
+        /// Makes new string where values delimeted by delimeter
+        /// </summary>
+        /// <param name="values"></param>
+        /// <param name="delimeter"></param>
+        /// <returns></returns>
+        public static string ToStringWithDelimeters(this IEnumerable<string> values, char delimeter)
+        {
+            return values.ToStringWithDelimeters(delimeter.ToString());
+        }
+
+        /// <summary>
+        /// Makes new string where values delimeted by delimeter
+        /// </summary>
+        /// <param name="values"></param>
+        /// <param name="delimeter"></param>
+        /// <returns></returns>
+        public static string ToStringWithDelimeters(this IEnumerable<string> values, string delimeter)
+        {
+            if (values != null && values.Count() > 0)
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (var value in values)
+                {
+                    sb.Append(value);
+                    sb.Append(delimeter);
+                }
+                sb.Remove(sb.Length - delimeter.Length, delimeter.Length);
+                return sb.ToString();
+            }
+            return string.Empty;
         }
     }
 }

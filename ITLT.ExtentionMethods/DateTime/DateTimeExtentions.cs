@@ -1,6 +1,8 @@
 ﻿namespace ITLT.ExtentionMethods
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
     public static class DateTimeExtetions
     {
@@ -164,7 +166,7 @@
 
         #endregion
 
-        #region MyRegion
+        #region Get 
 
         public static DateTime MondayAt(this DateTime self, int weeks = 0) => self.WeekStart().AddDays(weeks * 7);
 
@@ -189,6 +191,11 @@
         #endregion
 
         #region Other Helpful Methods
+
+        public static bool IsHoliday(this DateTime self, IEnumerable<DateTime> holidays)
+        {
+            return (holidays == null) ? false : holidays.Any(x => x == self);
+        }
 
         public static DateTime CopyTime(this DateTime self, DateTime source)
         {

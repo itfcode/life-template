@@ -3,10 +3,10 @@
 
     using ITLT.Data.Classes;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.ModelConfiguration;
 
-    public abstract class EntitySyncMap<T> : EntityTypeConfiguration<T> where T : EntitySync
+    public abstract class EntitySyncMap<T> : EntityBaseMap<T> where T : EntitySync
     {
+
         public EntitySyncMap()
         {
 

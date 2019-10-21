@@ -105,5 +105,8 @@
       <DependentUpon>201910211508180_AccountsAdding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mapping\Documents\InvoiceIn\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

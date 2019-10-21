@@ -40,14 +40,12 @@
 
         public DataContext() : base("DefaultConnection")
         {
+
             this.Goods = this.Set<Good>();
             this.ExpenseItems = this.Set<ExpenseItem>();
             this.RevenueItems = this.Set<RevenueItem>();
-
-            //this.IncomingPayments = this.Set<IncomingPayment>();
-            //this.OutgoingPayments = this.Set<OutgoingPayment>();
-            //this.PurchaseInvoices = this.Set<PurchaseInvoice>();
-            //this.SalesInvoices = this.Set<SalesInvoice>();
+            this.Currencies = this.Set<Currency>();
+            this.MoneyAccounts = this.Set<MoneyAccount>();
         }
 
         #endregion
@@ -101,6 +99,11 @@
             }
 
             return entity;
+        }
+
+        public ICollection<T> Update<T>(ICollection<T> items, Action<T> updateStrategy) where T : class, new()
+        {
+            throw new NotImplementedException();
         }
 
         public void Delete<T>(object id) where T : class, new()

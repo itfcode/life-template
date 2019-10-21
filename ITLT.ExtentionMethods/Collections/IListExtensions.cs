@@ -3,24 +3,25 @@
 
     using System.Collections.Generic;
 
-    public static class ICollectionExtensions
+    public static class IListExtensions
     {
-        #region MyRegion
+
+        #region Private Methods
 
         #endregion
 
         #region Public Methods 
 
         /// <summary>
-        /// Adds self to collection.
+        /// Inserts self to list.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="self">The self.</param>
         /// <param name="collection">The collection.</param>
         /// <returns></returns>
-        public static T AddTo<T>(this T self, ICollection<T> collection)
+        public static T InsertTo<T>(this T self, IList<T> collection, int index)
         {
-            collection.Add(self);
+            collection.Insert(index, self);
             return self;
         }
 

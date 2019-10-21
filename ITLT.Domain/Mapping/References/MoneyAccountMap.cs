@@ -9,7 +9,7 @@
         public MoneyAccountMap()
         {
 
-            this.HasOptional(t => t.Currency)
+            this.HasRequired(t => t.Currency)
                 .WithMany(t => t.MoneyAccounts)
                 .HasForeignKey(t => t.CurrencyId)
                 .WillCascadeOnDelete(false);
