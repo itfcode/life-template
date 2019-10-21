@@ -12,6 +12,6 @@
 
         public virtual Contract Contract { get; set; }
 
-        public virtual ICollection<InvoiceOutTable> Rows { get; set; }
+        public virtual ICollection<InvoiceOutRow> Rows { get; set; }
     }
 }

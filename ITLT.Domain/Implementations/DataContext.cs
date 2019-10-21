@@ -159,9 +159,9 @@
             List<Type> compatableTypes = new List<Type>()
             {
                 typeof(EntityTypeConfiguration<>),
-                //typeof(EntityBaseMap<>),
-                //typeof(EntityMap<>),
-                //typeof(SyncEntityMap<>),
+                typeof(EntityBaseMap<>),
+                typeof(EntityMap<>),
+                typeof(EntitySyncMap<>),
                 //typeof(ReferenceMap<>),
                 //typeof(SyncReferenceMap<>),
                 //typeof(DocumentMap<>),

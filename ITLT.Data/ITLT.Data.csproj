@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Documents\DocumentTable.cs" />
-    <Compile Include="Classes\Documents\InvoiceIn\InvoiceInTable.cs" />
+    <Compile Include="Classes\Documents\DocumentRow.cs" />
+    <Compile Include="Classes\Documents\InvoiceIn\InvoiceInRow.cs" />
     <Compile Include="Classes\Documents\InvoiceIn\InvoiceInHead.cs" />
     <Compile Include="Classes\Documents\DocumentHead.cs" />
     <Compile Include="Classes\Documents\InvoiceOut\InvoiceOutHead.cs" />
-    <Compile Include="Classes\Documents\InvoiceOut\InvoiceOutTable.cs" />
+    <Compile Include="Classes\Documents\InvoiceOut\InvoiceOutRow.cs" />
     <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\EntitySync.cs" />
     <Compile Include="Classes\References\ExpenseItem.cs" />
@@ -53,10 +53,11 @@
     <Compile Include="Classes\References\Good.cs" />
     <Compile Include="Classes\References\Contract.cs" />
     <Compile Include="Classes\References\Contragent.cs" />
+    <Compile Include="Classes\References\_ReferenceSync.cs" />
     <Compile Include="Classes\References\_Reference.cs" />
-    <Compile Include="Interfaces\Documents\IDocumentSync.cs" />
-    <Compile Include="Interfaces\Documents\IDocumentBase.cs" />
-    <Compile Include="Interfaces\Documents\IDocument.cs" />
+    <Compile Include="Interfaces\Documents\IDocumentHeadSync.cs" />
+    <Compile Include="Interfaces\Documents\IDocumentHeadBase.cs" />
+    <Compile Include="Interfaces\Documents\IDocumentHead.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IEntityBase.cs" />
     <Compile Include="Interfaces\IEntityBaseT.cs" />

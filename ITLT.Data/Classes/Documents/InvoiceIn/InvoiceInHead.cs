@@ -4,6 +4,6 @@
 
     public class InvoiceInHead : DocumentHead
     {
-        public virtual ICollection<InvoiceInTable> Rows { get; set; }
+        public virtual ICollection<InvoiceInRow> Rows { get; set; }
     }
 }

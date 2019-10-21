@@ -1,7 +1,7 @@
 ﻿namespace ITLT.Data.Classes
 { 
 
-    public class InvoiceInTable : DocumentTable
+    public class InvoiceInRow : DocumentRow
     {
         public InvoiceInHead Head { get; set; }
     }

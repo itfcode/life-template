@@ -54,9 +54,13 @@
     <Compile Include="Implementations\DataContext.cs" />
     <Compile Include="Interfaces\IGenericRepo.cs" />
     <Compile Include="Interfaces\IDataContext.cs" />
+    <Compile Include="Mapping\Documents\Basis\DocumentHeadMap.cs" />
+    <Compile Include="Mapping\Documents\Basis\DocumentRowMap.cs" />
     <Compile Include="Mapping\EntityBaseMap.cs" />
-    <Compile Include="Mapping\Class2.cs" />
+    <Compile Include="Mapping\EntitySyncMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
+    <Compile Include="Mapping\References\ReferenceSyncMap.cs" />
+    <Compile Include="Mapping\References\ReferenceMap.cs" />
     <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

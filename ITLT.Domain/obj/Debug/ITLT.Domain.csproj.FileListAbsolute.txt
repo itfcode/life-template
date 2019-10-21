@@ -1,5 +1,3 @@
-J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csprojAssemblyReference.cache
-J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.CoreCompileInputs.cache
 J:\BBGit\life-template\ITLT.Domain\bin\Debug\ITLT.Domain.dll.config
 J:\BBGit\life-template\ITLT.Domain\bin\Debug\ITLT.Domain.dll
 J:\BBGit\life-template\ITLT.Domain\bin\Debug\ITLT.Domain.pdb
@@ -12,6 +10,8 @@ J:\BBGit\life-template\ITLT.Domain\bin\Debug\EntityFramework.xml
 J:\BBGit\life-template\ITLT.Domain\bin\Debug\EntityFramework.Extended.xml
 J:\BBGit\life-template\ITLT.Domain\bin\Debug\EntityFramework.Extended.dll.config
 J:\BBGit\life-template\ITLT.Domain\bin\Debug\EntityFramework.SqlServer.xml
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csprojAssemblyReference.cache
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.CoreCompileInputs.cache
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.CopyComplete
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.dll
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.pdb

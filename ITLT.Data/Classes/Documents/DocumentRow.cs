@@ -3,11 +3,11 @@
 
     using System;
 
-    public class DocumentTable : EntitySync
+    public class DocumentRow : EntitySync
     {
 
         public Guid HeadId { get; set; }
         
-        public int RowNumber { get; set; }
+        public int Number { get; set; }
     }
 }
