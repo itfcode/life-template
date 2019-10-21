@@ -1,4 +1,4 @@
-﻿namespace ITLT.Domain.Mapping.Documents
+﻿namespace ITLT.Domain.Mapping
 {
     using ITLT.Data.Classes;
 

@@ -162,10 +162,10 @@
                 typeof(EntityBaseMap<>),
                 typeof(EntityMap<>),
                 typeof(EntitySyncMap<>),
-                //typeof(ReferenceMap<>),
-                //typeof(SyncReferenceMap<>),
-                //typeof(DocumentMap<>),
-                //typeof(SyncDocumentMap<>),
+                typeof(ReferenceMap<>),
+                typeof(ReferenceSyncMap<>),
+                typeof(DocumentHeadMap<>),
+                typeof(DocumentRowMap<>),
             };
 
             Assembly.GetExecutingAssembly()

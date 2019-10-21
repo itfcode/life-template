@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ITLT.Domain.Mapping.References
+﻿namespace ITLT.Domain.Mapping
 {
-    class ReferenceSyncMap
+    using ITLT.Data.Classes;
+
+    public abstract class ReferenceSyncMap<T> : EntitySyncMap<T> where T : EntitySync
     {
     }
 }
