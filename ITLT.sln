@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.Data", "ITLT.Data\ITLT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.ExtentionMethods", "ITLT.ExtentionMethods\ITLT.ExtentionMethods.csproj", "{5532FEBE-11AD-4475-ADD8-A7F5ED130DB4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{C580A804-90D8-4F7C-AC65-381591E6B5DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

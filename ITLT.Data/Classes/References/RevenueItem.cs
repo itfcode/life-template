@@ -7,6 +7,7 @@
     /// </summary>
     public class RevenueItem : Reference
     {
+
         public virtual ICollection<Good> Goods { get; set; }
     }
 }
