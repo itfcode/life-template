@@ -59,6 +59,8 @@
     <Compile Include="Mapping\EntityBaseMap.cs" />
     <Compile Include="Mapping\EntitySyncMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
+    <Compile Include="Mapping\References\MoneyAccountMap.cs" />
+    <Compile Include="Mapping\References\CurrencyMap.cs" />
     <Compile Include="Mapping\References\RevenueItemMap.cs" />
     <Compile Include="Mapping\References\GoodMap.cs" />
     <Compile Include="Mapping\References\ExpenseItemMap.cs" />
@@ -67,6 +69,14 @@
     <Compile Include="Migrations\201910211415219_Initial.cs" />
     <Compile Include="Migrations\201910211415219_Initial.Designer.cs">
       <DependentUpon>201910211415219_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910211506432_Refs_Currency_MoneyAccount.cs" />
+    <Compile Include="Migrations\201910211506432_Refs_Currency_MoneyAccount.Designer.cs">
+      <DependentUpon>201910211506432_Refs_Currency_MoneyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910211508180_AccountsAdding.cs" />
+    <Compile Include="Migrations\201910211508180_AccountsAdding.Designer.cs">
+      <DependentUpon>201910211508180_AccountsAdding.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +97,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201910211415219_Initial.resx">
       <DependentUpon>201910211415219_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910211506432_Refs_Currency_MoneyAccount.resx">
+      <DependentUpon>201910211506432_Refs_Currency_MoneyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910211508180_AccountsAdding.resx">
+      <DependentUpon>201910211508180_AccountsAdding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

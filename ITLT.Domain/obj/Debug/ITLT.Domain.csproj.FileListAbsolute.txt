@@ -17,3 +17,5 @@ J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.dll
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.pdb
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.Initial.resources
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.GenerateResource.cache
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.Refs_Currency_MoneyAccount.resources
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.AccountsAdding.resources

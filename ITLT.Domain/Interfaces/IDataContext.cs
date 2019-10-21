@@ -1,15 +1,20 @@
 ﻿namespace ITLT.Domain.Interfaces
 {
 
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using ITLT.Data.Classes;
+    using System.Data.Entity;
 
-    public interface IDataContext
+    public interface IDataContext : IGenericRepository
     {
-        //
 
+        IDbSet<Good> Goods { get; set; }
+
+        IDbSet<ExpenseItem> ExpenseItems { get; set; }
+
+        IDbSet<RevenueItem> RevenueItems { get; set; }
+
+        IDbSet<Currency> Currencies { get; set; }
+
+        IDbSet<MoneyAccount> MoneyAccounts { get; set; }
     }
 }

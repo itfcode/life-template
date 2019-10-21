@@ -25,6 +25,10 @@
 
         public IDbSet<Good> Goods { get; set; }
 
+        public IDbSet<Currency> Currencies { get; set; }
+
+        public IDbSet<MoneyAccount> MoneyAccounts { get; set; }
+
         #endregion
 
         #region Constructors
@@ -78,15 +82,15 @@
             return item;
         }
 
-        public IEnumerable<T> Insert<T>(IEnumerable<T> entities) where T : class, new()
+        public ICollection<T> Insert<T>(ICollection<T> entities) where T : class, new()
         {
-            var items = this.Set<T>().AddRange(entities);
+            var items = this.Set<T>().AddRange(entities).ToList();
             this.Commit();
 
             return items;
         }
 
-        public void Update<T>(object id, Action<T> updateStrategy) where T : class, new()
+        public T Update<T>(object id, Action<T> updateStrategy) where T : class, new()
         {
             var entity = this.Get<T>(id);
 
@@ -95,6 +99,8 @@
                 updateStrategy(entity);
                 this.Commit();
             }
+
+            return entity;
         }
 
         public void Delete<T>(object id) where T : class, new()

@@ -49,6 +49,8 @@
     <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\EntitySync.cs" />
     <Compile Include="Classes\References\ExpenseItem.cs" />
+    <Compile Include="Classes\References\Currency.cs" />
+    <Compile Include="Classes\References\MoneyAccount.cs" />
     <Compile Include="Classes\References\RevenueItem.cs" />
     <Compile Include="Classes\References\Good.cs" />
     <Compile Include="Classes\References\Contract.cs" />
