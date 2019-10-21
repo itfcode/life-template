@@ -2,7 +2,7 @@
 {
     using ITLT.Data.Classes;
 
-    public class DocumentRowMap<T> : EntitySyncMap<T> where T : EntitySync
+    public abstract class DocumentRowMap<T> : EntitySyncMap<T> where T : EntitySync
     {
 
     }

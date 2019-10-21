@@ -2,7 +2,7 @@
 {
     using ITLT.Data.Classes;
 
-    public class DocumentHeadMap<T> : EntitySyncMap<T> where T : EntitySync
+    public abstract class DocumentHeadMap<T> : EntitySyncMap<T> where T : EntitySync
     {
     }
 }

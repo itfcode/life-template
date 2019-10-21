@@ -59,8 +59,15 @@
     <Compile Include="Mapping\EntityBaseMap.cs" />
     <Compile Include="Mapping\EntitySyncMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
-    <Compile Include="Mapping\References\ReferenceSyncMap.cs" />
-    <Compile Include="Mapping\References\ReferenceMap.cs" />
+    <Compile Include="Mapping\References\RevenueItemMap.cs" />
+    <Compile Include="Mapping\References\GoodMap.cs" />
+    <Compile Include="Mapping\References\ExpenseItemMap.cs" />
+    <Compile Include="Mapping\References\_ReferenceSyncMap.cs" />
+    <Compile Include="Mapping\References\_ReferenceMap.cs" />
+    <Compile Include="Migrations\201910211415219_Initial.cs" />
+    <Compile Include="Migrations\201910211415219_Initial.Designer.cs">
+      <DependentUpon>201910211415219_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -77,6 +84,10 @@
       <Name>ITLT.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910211415219_Initial.resx">
+      <DependentUpon>201910211415219_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

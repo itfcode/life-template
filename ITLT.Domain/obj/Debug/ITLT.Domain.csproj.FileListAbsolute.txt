@@ -15,3 +15,5 @@ J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.CoreCompileInput
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.CopyComplete
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.dll
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.pdb
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.Initial.resources
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.csproj.GenerateResource.cache
