@@ -51,12 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Implementations\DataContext.cs" />
+    <Compile Include="Interfaces\IGenericRepo.cs" />
+    <Compile Include="Interfaces\IDataContext.cs" />
+    <Compile Include="Mapping\EntityBaseMap.cs" />
+    <Compile Include="Mapping\Class2.cs" />
+    <Compile Include="Mapping\EntityMap.cs" />
+    <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Migrations\Helper.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITLT.Data\ITLT.Data.csproj">
+      <Project>{343811ae-903c-4627-8bea-b1eba97b9b7d}</Project>
+      <Name>ITLT.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -54,11 +54,15 @@
     <Compile Include="Classes\References\Contract.cs" />
     <Compile Include="Classes\References\Contragent.cs" />
     <Compile Include="Classes\References\_Reference.cs" />
+    <Compile Include="Interfaces\Documents\IDocumentSync.cs" />
+    <Compile Include="Interfaces\Documents\IDocumentBase.cs" />
     <Compile Include="Interfaces\Documents\IDocument.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IEntityBase.cs" />
     <Compile Include="Interfaces\IEntityBaseT.cs" />
     <Compile Include="Interfaces\IEntitySync.cs" />
+    <Compile Include="Interfaces\References\IReferenceBase.cs" />
+    <Compile Include="Interfaces\References\IReferenceSync.cs" />
     <Compile Include="Interfaces\References\IReference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

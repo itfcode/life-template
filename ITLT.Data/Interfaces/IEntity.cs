@@ -1,4 +1,4 @@
-﻿namespace ITLT.Data
+﻿namespace ITLT.Data.Interfaces
 {
     public interface IEntity : IEntityBase<int>
     {

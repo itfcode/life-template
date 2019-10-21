@@ -1,0 +1,3 @@
+﻿Add-Migration -ConfigurationTypeName ITLT.Domain.Migrations.DataConfiguration Initial -Force
+
+Update-Database -ConfigurationTypeName ITLT.Domain.Migrations.DataConfiguration -verbose
