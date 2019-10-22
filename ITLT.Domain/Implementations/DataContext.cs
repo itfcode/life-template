@@ -17,7 +17,7 @@
     public class DataContext : DbContext, IDataContext
     {
 
-        #region Public Properties 
+        #region EN: References; RU: Справочники
 
         public IDbSet<ExpenseItem> ExpenseItems { get; set; }
 
@@ -28,6 +28,22 @@
         public IDbSet<Currency> Currencies { get; set; }
 
         public IDbSet<MoneyAccount> MoneyAccounts { get; set; }
+
+        #endregion
+
+        #region EN: Documents; RU: Документы
+
+        public IDbSet<InvoiceInHead> InvoiceInHeads { get; set; }
+
+        public IDbSet<InvoiceInRow> InvoiceInRows { get; set; }
+
+        public IDbSet<InvoiceOutHead> InvoiceOutHeads { get; set; }
+
+        public IDbSet<InvoiceOutRow> InvoiceOutRows { get; set; }
+
+        #endregion
+
+        #region EN: Totals; RU: Итоги
 
         #endregion
 
@@ -46,6 +62,11 @@
             this.RevenueItems = this.Set<RevenueItem>();
             this.Currencies = this.Set<Currency>();
             this.MoneyAccounts = this.Set<MoneyAccount>();
+
+            this.InvoiceInHeads = this.Set<InvoiceInHead>();
+            this.InvoiceInRows = this.Set<InvoiceInRow>();
+            this.InvoiceOutHeads = this.Set<InvoiceOutHead>();
+            this.InvoiceOutRows = this.Set<InvoiceOutRow>();
         }
 
         #endregion
@@ -153,7 +174,7 @@
 
         #endregion
 
-        #region MyRegion
+        #region Model Creating
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

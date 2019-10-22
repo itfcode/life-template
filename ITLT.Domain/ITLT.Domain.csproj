@@ -56,6 +56,10 @@
     <Compile Include="Interfaces\IDataContext.cs" />
     <Compile Include="Mapping\Documents\Basis\DocumentHeadMap.cs" />
     <Compile Include="Mapping\Documents\Basis\DocumentRowMap.cs" />
+    <Compile Include="Mapping\Documents\InvoiceIn\InvoiceInRowMap.cs" />
+    <Compile Include="Mapping\Documents\InvoiceIn\InvoiceInHeadMap.cs" />
+    <Compile Include="Mapping\Documents\InvoiceOut\InvoiceOutHeadMap.cs" />
+    <Compile Include="Mapping\Documents\InvoiceOut\InvoiceOutRowMap.cs" />
     <Compile Include="Mapping\EntityBaseMap.cs" />
     <Compile Include="Mapping\EntitySyncMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
@@ -105,8 +109,6 @@
       <DependentUpon>201910211508180_AccountsAdding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mapping\Documents\InvoiceIn\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
