@@ -89,6 +89,10 @@
     <Compile Include="Migrations\201910230851118_NewDocuments.Designer.cs">
       <DependentUpon>201910230851118_NewDocuments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910230908190_NewDocuments1.cs" />
+    <Compile Include="Migrations\201910230908190_NewDocuments1.Designer.cs">
+      <DependentUpon>201910230908190_NewDocuments1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910230851118_NewDocuments.resx">
       <DependentUpon>201910230851118_NewDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910230908190_NewDocuments1.resx">
+      <DependentUpon>201910230908190_NewDocuments1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

@@ -10,6 +10,7 @@
         {
 
             Define(x => x.Date, "Date", true);
+            Define(x => x.Commited, "Commited", true);
             Define(x => x.Comment, "Comment", false);
         }
     }

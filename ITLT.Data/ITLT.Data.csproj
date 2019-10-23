@@ -60,6 +60,7 @@
     <Compile Include="Classes\References\Contragent.cs" />
     <Compile Include="Classes\References\_ReferenceSync.cs" />
     <Compile Include="Classes\References\_Reference.cs" />
+    <Compile Include="Classes\Totals\Total.cs" />
     <Compile Include="Interfaces\Documents\IDocumentHeadSync.cs" />
     <Compile Include="Interfaces\Documents\IDocumentHeadBase.cs" />
     <Compile Include="Interfaces\Documents\IDocumentHead.cs" />
