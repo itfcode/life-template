@@ -8,6 +8,7 @@
     /// </summary>
     public class InvoiceOutHead : DocumentHead
     {
+
         public virtual Contragent Contragent { get; set; }
 
         public virtual Contract Contract { get; set; }

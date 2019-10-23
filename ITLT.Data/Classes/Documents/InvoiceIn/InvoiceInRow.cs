@@ -3,6 +3,7 @@
 
     public class InvoiceInRow : DocumentRow
     {
+
         public InvoiceInHead Head { get; set; }
     }
 }

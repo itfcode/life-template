@@ -1,6 +1,9 @@
 ﻿namespace ITLT.Data.Classes.Documents.PaymentIn
 {
 
+    /// <summary>
+    /// EN: Incoming Payment; RU: Входящий платеж
+    /// </summary>
     public class PaymentInHead
     {
 
