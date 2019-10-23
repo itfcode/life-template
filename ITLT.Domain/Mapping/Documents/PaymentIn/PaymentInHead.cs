@@ -1,17 +1,15 @@
 ﻿namespace ITLT.Domain.Mapping.Documents
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
+    using ITLT.Data.Classes;
 
-    /// <summary>
-    /// EN: Incoming Payment; RU: Входящий Платеж
-    /// </summary>
-    public class PaymentInHead
+    public class PaymentInHeadMap : DocumentHeadMap<PaymentInHead>
     {
 
+        public PaymentInHeadMap()
+        {
+
+            this.ToTable("PaymentInHead");
+        }
     }
 }

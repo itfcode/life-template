@@ -1,10 +1,10 @@
-﻿namespace ITLT.Data.Classes.Documents.MoneyTransfer
+﻿namespace ITLT.Data.Classes
 {
 
     /// <summary>
     /// EN: Money Transfer; RU: Денежный перевод между своими счетами
     /// </summary>
-    public class MoneyTransferHead
+    public class MoneyTransferHead : DocumentHead
     {
 
         /// <summary>

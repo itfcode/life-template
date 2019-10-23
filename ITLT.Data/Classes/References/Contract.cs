@@ -1,5 +1,6 @@
 ﻿namespace ITLT.Data.Classes
 {
+
     using System;
 
     public class Contract : Reference

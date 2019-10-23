@@ -1,5 +1,6 @@
 ﻿namespace ITLT.Data.Classes
 {
+
     using System.Collections.Generic;
 
     /// <summary>

@@ -41,6 +41,12 @@
 
         public IDbSet<InvoiceOutRow> InvoiceOutRows { get; set; }
 
+        public IDbSet<MoneyTransferHead> MoneyTransferHeads { get; set; }
+
+        public IDbSet<PaymentInHead> PaymentInHeads { get; set; }
+
+        public IDbSet<PaymentOutHead> PaymentOutHeads { get; set; }
+
         #endregion
 
         #region EN: Totals; RU: Итоги
@@ -67,6 +73,9 @@
             this.InvoiceInRows = this.Set<InvoiceInRow>();
             this.InvoiceOutHeads = this.Set<InvoiceOutHead>();
             this.InvoiceOutRows = this.Set<InvoiceOutRow>();
+            this.MoneyTransferHeads = this.Set<MoneyTransferHead>();
+            this.InvoiceInHeads = this.Set<InvoiceInHead>();
+            this.InvoiceOutHeads = this.Set<InvoiceOutHead>();
         }
 
         #endregion

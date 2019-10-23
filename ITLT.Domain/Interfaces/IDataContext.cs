@@ -31,6 +31,12 @@
 
         IDbSet<InvoiceOutRow> InvoiceOutRows { get; set; }
 
+        IDbSet<MoneyTransferHead> MoneyTransferHeads { get; set; }
+
+        IDbSet<PaymentInHead> PaymentInHeads { get; set; }
+
+        IDbSet<PaymentOutHead> PaymentOutHeads { get; set; }
+
         #endregion
 
         #region EN: Totals; RU: Итоги

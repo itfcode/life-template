@@ -1,10 +1,10 @@
-﻿namespace ITLT.Data.Classes.Documents.PaymentOut
+﻿namespace ITLT.Data.Classes
 {
     
     /// <summary>
     /// EN: Outcoming Payment; RU: Исходящий платеж
     /// </summary>
-    public class PaymentOutHead
+    public class PaymentOutHead : DocumentHead
     {
 
         /// <summary>

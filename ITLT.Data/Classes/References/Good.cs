@@ -1,5 +1,6 @@
 ﻿namespace ITLT.Data.Classes
 {
+
     /// <summary>
     /// EN: Goods and Services;  RU: Товары и услуги
     /// </summary>
