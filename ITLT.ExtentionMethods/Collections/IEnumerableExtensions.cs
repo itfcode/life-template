@@ -121,12 +121,15 @@
             if (values != null && values.Count() > 0)
             {
                 StringBuilder sb = new StringBuilder();
+
                 foreach (var value in values)
                 {
                     sb.Append(value);
                     sb.Append(delimeter);
                 }
+
                 sb.Remove(sb.Length - delimeter.Length, delimeter.Length);
+
                 return sb.ToString();
             }
             return string.Empty;
