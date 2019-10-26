@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{C580
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.Domain", "ITLT.Domain\ITLT.Domain.csproj", "{7DF66095-62DE-4665-AA79-44D64A57D29B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.DTO", "ITLT.DTO\ITLT.DTO.csproj", "{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{7DF66095-62DE-4665-AA79-44D64A57D29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DF66095-62DE-4665-AA79-44D64A57D29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DF66095-62DE-4665-AA79-44D64A57D29B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,6 +3,9 @@
 
     using ITLT.Data.Classes;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class InvoiceInRowMap : DocumentRowMap<InvoiceInRow> 
     {
 

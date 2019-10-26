@@ -9,6 +9,9 @@
     public class RevenueItem : Reference
     {
 
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual ICollection<Good> Goods { get; set; }
     }
 }
