@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Head\TemplateHeadDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Head\TemplateHeadInsDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Head\TemplateHeadUpdDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Head\TemplateHeadBaseDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Row\TemplateRowDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Row\TemplateRowInsDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Row\TemplateRowUpdDTO.cs" />
+    <Compile Include="Documents\%40TemplateDoc\Row\TemplateRowBaseDTO.cs" />
     <Compile Include="Documents\InvoiceIn\Head\InvoiceInHeadDTO.cs" />
     <Compile Include="Documents\InvoiceIn\Head\InvoiceInHeadUpdDTO.cs" />
     <Compile Include="Documents\InvoiceIn\Head\InvoiceInHeadInsDTO.cs" />
@@ -53,8 +60,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Documents\InvoiceOut\" />
-    <Folder Include="References\" />
+    <Folder Include="Documents\InvoiceOut\Head\" />
+    <Folder Include="Documents\InvoiceOut\Row\" />
+    <Folder Include="Documents\MoneyTransfer\Head\" />
+    <Folder Include="Documents\MoneyTransfer\Row\" />
+    <Folder Include="Documents\PaymentIn\Head\" />
+    <Folder Include="Documents\PaymentIn\Row\" />
+    <Folder Include="Documents\PaymentOut\Head\" />
+    <Folder Include="Documents\PaymentOut\Row\" />
+    <Folder Include="References\Contract\" />
+    <Folder Include="References\Contragent\" />
+    <Folder Include="References\Currency\" />
+    <Folder Include="References\ExpenseItem\" />
+    <Folder Include="References\Good\" />
+    <Folder Include="References\MoneyAccount\" />
+    <Folder Include="References\RevenueItem\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
