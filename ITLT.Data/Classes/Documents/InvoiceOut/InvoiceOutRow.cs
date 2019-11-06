@@ -1,6 +1,8 @@
 ﻿namespace ITLT.Data.Classes
 {
 
+    using ITLT.Data.Classes.References;
+
     /// <summary>
     /// EN: Table Part of Outcomming Invoice; RU: Табличная Часть Исходящего Счета(Чека, Накладной)
     /// </summary>

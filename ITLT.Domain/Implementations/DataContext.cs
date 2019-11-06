@@ -1,6 +1,7 @@
 ﻿namespace ITLT.Domain.Implementations
 {
     using ITLT.Data.Classes;
+    using ITLT.Data.Classes.References;
     using ITLT.Data.Interfaces;
     using ITLT.Domain.Interfaces;
     using ITLT.Domain.Mapping;

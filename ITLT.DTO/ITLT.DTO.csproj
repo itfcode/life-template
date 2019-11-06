@@ -58,6 +58,10 @@
     <Compile Include="Documents\InvoiceIn\Row\InvoiceInRowDTO.cs" />
     <Compile Include="Documents\InvoiceIn\Row\InvoiceInRowBaseDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="References\%40TemplateRef\TemplateRefDetailsDTO.cs" />
+    <Compile Include="References\%40TemplateRef\TemplateRefInsDTO.cs" />
+    <Compile Include="References\%40TemplateRef\TemplateRefUpdDTO.cs" />
+    <Compile Include="References\%40TemplateRef\TemplateRefBaseDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Documents\InvoiceOut\Head\" />

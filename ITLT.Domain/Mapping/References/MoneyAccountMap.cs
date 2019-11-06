@@ -2,6 +2,7 @@
 {
 
     using ITLT.Data.Classes;
+    using ITLT.Data.Classes.References;
 
     public class MoneyAccountMap : ReferenceMap<MoneyAccount>
     {

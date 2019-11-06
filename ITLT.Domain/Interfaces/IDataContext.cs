@@ -2,6 +2,8 @@
 {
 
     using ITLT.Data.Classes;
+    using ITLT.Data.Classes.References;
+    //using ITLT.Data.Classes;
     using System.Data.Entity;
 
     public interface IDataContext : IGenericRepository

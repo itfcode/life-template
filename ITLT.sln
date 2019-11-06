@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.Domain", "ITLT.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.DTO", "ITLT.DTO\ITLT.DTO.csproj", "{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITLT.UnitTests", "ITLT.UnitTests\ITLT.UnitTests.csproj", "{77832669-3F20-4787-897E-7E0F054B63BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,9 +37,16 @@ Global
 		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8BB545-871C-4EE5-AA50-2A7025C3F7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77832669-3F20-4787-897E-7E0F054B63BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77832669-3F20-4787-897E-7E0F054B63BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77832669-3F20-4787-897E-7E0F054B63BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77832669-3F20-4787-897E-7E0F054B63BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77832669-3F20-4787-897E-7E0F054B63BA} = {C580A804-90D8-4F7C-AC65-381591E6B5DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F899B682-00A4-49F4-9B74-829D63B94722}

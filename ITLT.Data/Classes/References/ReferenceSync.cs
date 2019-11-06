@@ -1,4 +1,4 @@
-﻿namespace ITLT.Data.Classes
+﻿namespace ITLT.Data.Classes.References
 {
 
     using ITLT.Data.Interfaces;

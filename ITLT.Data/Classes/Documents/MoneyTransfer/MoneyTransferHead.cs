@@ -1,6 +1,8 @@
 ﻿namespace ITLT.Data.Classes
 {
 
+    using ITLT.Data.Classes.References;
+
     /// <summary>
     /// EN: Money Transfer; RU: Денежный перевод между своими счетами
     /// </summary>

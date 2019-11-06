@@ -1,7 +1,7 @@
 ﻿namespace ITLT.Domain.Mapping
 {
 
-    using ITLT.Data.Classes;
+    using ITLT.Data.Classes.References;
 
     public abstract class ReferenceMap<T> : EntityMap<T> where T : Reference
     {

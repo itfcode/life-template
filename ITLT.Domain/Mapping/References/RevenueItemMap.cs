@@ -1,7 +1,7 @@
 ﻿namespace ITLT.Domain.Mapping.References
 {
 
-    using ITLT.Data.Classes;
+    using ITLT.Data.Classes.References;
 
     public class RevenueItemMap : ReferenceMap<RevenueItem>
     {

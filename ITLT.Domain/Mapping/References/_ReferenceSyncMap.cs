@@ -1,7 +1,8 @@
 ﻿namespace ITLT.Domain.Mapping
 {
 
-    using ITLT.Data.Classes;
+    using ITLT.Data.Classes.References;
+
 
     public abstract class ReferenceSyncMap<T> : EntitySyncMap<T> where T : ReferenceSync
     {

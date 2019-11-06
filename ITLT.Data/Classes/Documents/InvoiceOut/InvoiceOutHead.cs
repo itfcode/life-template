@@ -1,6 +1,6 @@
 ﻿namespace ITLT.Data.Classes
 {
-
+    using ITLT.Data.Classes.References;
     using System.Collections.Generic;
 
     /// <summary>

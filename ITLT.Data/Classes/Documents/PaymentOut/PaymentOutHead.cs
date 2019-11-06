@@ -1,6 +1,8 @@
 ﻿namespace ITLT.Data.Classes
 {
-    
+
+    using ITLT.Data.Classes.References;
+
     /// <summary>
     /// EN: Outcoming Payment; RU: Исходящий платеж
     /// </summary>
