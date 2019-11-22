@@ -25,6 +25,6 @@
         /// <summary>
         /// 
         /// </summary>
-        public InvoiceInHead Head { get; set; }
+        public virtual InvoiceInHead Head { get; set; }
     }
 }

@@ -11,7 +11,7 @@
         /// <summary>
         /// 
         /// </summary>
-        public Good Good { get; set; }
+        public virtual Good Good { get; set; }
 
         /// <summary>
         /// EN: ; RU: Количество
@@ -31,6 +31,6 @@
         /// <summary>
         /// EN: ; RU: Сслыка на шапку документа
         /// </summary>
-        public InvoiceOutHead Head { get; set; }
+        public virtual InvoiceOutHead Head { get; set; }
     }
 }

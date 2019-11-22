@@ -12,17 +12,17 @@
         /// <summary>
         /// Contragent
         /// </summary>
-        public Contragent Contragent { get; set; }
+        public virtual Contragent Contragent { get; set; }
 
         /// <summary>
         /// Contract
         /// </summary>
-        public Contract Contract { get; set; }
+        public virtual Contract Contract { get; set; }
 
         /// <summary>
         /// Account 
         /// </summary>
-        public MoneyAccount Account { get; set; }
+        public virtual MoneyAccount Account { get; set; }
 
         /// <summary>
         /// Summ 

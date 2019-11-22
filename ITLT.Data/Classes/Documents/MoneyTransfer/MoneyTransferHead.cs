@@ -12,7 +12,7 @@
         /// <summary>
         /// Outcoming Account 
         /// </summary>
-        public MoneyAccount AccountOut { get; set; }
+        public virtual MoneyAccount AccountOut { get; set; }
 
         /// <summary>
         /// Outcoming Summ 
@@ -22,7 +22,7 @@
         /// <summary>
         /// Incoming Account 
         /// </summary>
-        public MoneyAccount AccountIn { get; set; }
+        public virtual MoneyAccount AccountIn { get; set; }
 
         /// <summary>
         /// Incoming Summ 

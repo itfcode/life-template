@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DesignChecking\Class1.cs" />
+    <Compile Include="DesignChecking\DesignCheckingTests.cs" />
     <Compile Include="NUnitBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

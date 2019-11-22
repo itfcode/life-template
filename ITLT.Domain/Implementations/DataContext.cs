@@ -2,12 +2,10 @@
 {
     using ITLT.Data.Classes;
     using ITLT.Data.Classes.References;
-    using ITLT.Data.Interfaces;
     using ITLT.Domain.Interfaces;
     using ITLT.Domain.Mapping;
     using ITLT.Domain.Migrations;
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration;
@@ -229,23 +227,7 @@
 
         public override int SaveChanges()
         {
-            var now = DateTime.UtcNow;
-            //var trackables = this.ChangeTracker.Entries<ITrackable>();
-
-            //if (trackables != null)
-            //{
-
-            //    foreach (var item in trackables.Where(t => t.State == EntityState.Added))
-            //    {
-            //        item.Entity.CreatedDateTimeUtc = now;
-            //    }
-
-            //    foreach (var item in trackables.Where(t => t.State == EntityState.Modified))
-            //    {
-            //        item.Entity.ModifiedDateTimeUtc = now;
-            //    }
-            //}
-
+            // do something 
             return base.SaveChanges();
         }
 
