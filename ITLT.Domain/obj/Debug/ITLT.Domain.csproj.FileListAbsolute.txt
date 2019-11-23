@@ -21,3 +21,4 @@ J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.Refs_Currenc
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.AccountsAdding.resources
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.NewDocuments.resources
 J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.NewDocuments1.resources
+J:\BBGit\life-template\ITLT.Domain\obj\Debug\ITLT.Domain.Migrations.AlterDocuments.resources

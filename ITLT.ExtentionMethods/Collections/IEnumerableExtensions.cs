@@ -9,7 +9,7 @@
     public static class IEnumerableExtensions
     {
 
-        #region Union of several LINQ methods 
+        #region Union of LINQ methods 
 
         public static IEnumerable<TResult> SelectDistinct<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
         {
