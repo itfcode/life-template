@@ -17,3 +17,5 @@ J:\BBGit\life-template\ITLT.UnitTests\bin\Debug\nunit.util.dll
 J:\BBGit\life-template\ITLT.UnitTests\bin\Debug\ITLT.Data.dll
 J:\BBGit\life-template\ITLT.UnitTests\bin\Debug\ITLT.Data.pdb
 J:\BBGit\life-template\ITLT.UnitTests\obj\Debug\ITLT.UnitTests.csprojAssemblyReference.cache
+J:\BBGit\life-template\ITLT.UnitTests\bin\Debug\ITLT.ExtentionMethods.dll
+J:\BBGit\life-template\ITLT.UnitTests\bin\Debug\ITLT.ExtentionMethods.pdb

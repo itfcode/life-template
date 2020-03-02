@@ -8,7 +8,6 @@
 
         public PaymentOutHeadMap()
         {
-
             this.ToTable("PaymentOutHead");
         }
     }

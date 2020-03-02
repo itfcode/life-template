@@ -3,18 +3,81 @@ namespace ITLT.Domain.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class NewDocuments : DbMigration
+    public partial class AlterDocuments1 : DbMigration
     {
         public override void Up()
         {
-            DropIndex("dbo.MoneyAccount", new[] { "CurrencyId" });
+            CreateTable(
+                "dbo.Currency",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Code = c.Int(nullable: false),
+                        ShortName = c.String(nullable: false),
+                        Name = c.String(nullable: false),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.MoneyAccount",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        CurrencyId = c.Int(nullable: false),
+                        Name = c.String(nullable: false),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Currency", t => t.CurrencyId)
+                .Index(t => t.CurrencyId);
+            
+            CreateTable(
+                "dbo.ExpenseItem",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(nullable: false),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Good",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        RevenueItemId = c.Int(),
+                        ExpenseItemId = c.Int(),
+                        Name = c.String(nullable: false),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.ExpenseItem", t => t.ExpenseItemId)
+                .ForeignKey("dbo.RevenueItem", t => t.RevenueItemId)
+                .Index(t => t.RevenueItemId)
+                .Index(t => t.ExpenseItemId);
+            
+            CreateTable(
+                "dbo.RevenueItem",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(nullable: false),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
             CreateTable(
                 "dbo.InvoiceInHead",
                 c => new
                     {
                         Id = c.Guid(nullable: false, identity: true),
+                        Total = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Date = c.DateTime(nullable: false),
                         Comment = c.String(),
+                        Commited = c.Boolean(nullable: false),
+                        Marked = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -23,6 +86,9 @@ namespace ITLT.Domain.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false, identity: true),
+                        Quantity = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Price = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Amount = c.Decimal(nullable: false, precision: 18, scale: 2),
                         HeadId = c.Guid(nullable: false),
                         Number = c.Int(nullable: false),
                     })
@@ -35,8 +101,11 @@ namespace ITLT.Domain.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false, identity: true),
+                        Total = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Date = c.DateTime(nullable: false),
                         Comment = c.String(),
+                        Commited = c.Boolean(nullable: false),
+                        Marked = c.Boolean(nullable: false),
                         Contract_Id = c.Int(),
                         Contragent_Id = c.Int(),
                     })
@@ -51,15 +120,15 @@ namespace ITLT.Domain.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        DateStart = c.DateTime(nullable: false),
-                        DateFinish = c.DateTime(nullable: false),
+                        DateStart = c.DateTime(),
+                        DateFinish = c.DateTime(),
                         Name = c.String(),
                         Description = c.String(),
-                        Contraget_Id = c.Int(),
+                        Contragent_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Contragents", t => t.Contraget_Id)
-                .Index(t => t.Contraget_Id);
+                .ForeignKey("dbo.Contragents", t => t.Contragent_Id)
+                .Index(t => t.Contragent_Id);
             
             CreateTable(
                 "dbo.Contragents",
@@ -77,6 +146,9 @@ namespace ITLT.Domain.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false, identity: true),
+                        Quantity = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Price = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Amount = c.Decimal(nullable: false, precision: 18, scale: 2),
                         HeadId = c.Guid(nullable: false),
                         Number = c.Int(nullable: false),
                         Good_Id = c.Int(),
@@ -97,6 +169,8 @@ namespace ITLT.Domain.Migrations
                         Fee = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Date = c.DateTime(nullable: false),
                         Comment = c.String(),
+                        Commited = c.Boolean(nullable: false),
+                        Marked = c.Boolean(nullable: false),
                         AccountIn_Id = c.Int(),
                         AccountOut_Id = c.Int(),
                     })
@@ -115,6 +189,8 @@ namespace ITLT.Domain.Migrations
                         Fee = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Date = c.DateTime(nullable: false),
                         Comment = c.String(),
+                        Commited = c.Boolean(nullable: false),
+                        Marked = c.Boolean(nullable: false),
                         Account_Id = c.Int(),
                         Contract_Id = c.Int(),
                         Contragent_Id = c.Int(),
@@ -136,6 +212,8 @@ namespace ITLT.Domain.Migrations
                         Fee = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Date = c.DateTime(nullable: false),
                         Comment = c.String(),
+                        Commited = c.Boolean(nullable: false),
+                        Marked = c.Boolean(nullable: false),
                         Account_Id = c.Int(),
                         Contract_Id = c.Int(),
                         Contragent_Id = c.Int(),
@@ -148,13 +226,6 @@ namespace ITLT.Domain.Migrations
                 .Index(t => t.Contract_Id)
                 .Index(t => t.Contragent_Id);
             
-            AlterColumn("dbo.Currency", "Name", c => c.String(nullable: false));
-            AlterColumn("dbo.MoneyAccount", "CurrencyId", c => c.Int(nullable: false));
-            AlterColumn("dbo.MoneyAccount", "Name", c => c.String(nullable: false));
-            AlterColumn("dbo.ExpenseItem", "Name", c => c.String(nullable: false));
-            AlterColumn("dbo.Good", "Name", c => c.String(nullable: false));
-            AlterColumn("dbo.RevenueItem", "Name", c => c.String(nullable: false));
-            CreateIndex("dbo.MoneyAccount", "CurrencyId");
         }
         
         public override void Down()
@@ -171,8 +242,11 @@ namespace ITLT.Domain.Migrations
             DropForeignKey("dbo.InvoiceOutRow", "Good_Id", "dbo.Good");
             DropForeignKey("dbo.InvoiceOutHead", "Contragent_Id", "dbo.Contragents");
             DropForeignKey("dbo.InvoiceOutHead", "Contract_Id", "dbo.Contracts");
-            DropForeignKey("dbo.Contracts", "Contraget_Id", "dbo.Contragents");
+            DropForeignKey("dbo.Contracts", "Contragent_Id", "dbo.Contragents");
             DropForeignKey("dbo.InvoiceInRow", "HeadId", "dbo.InvoiceInHead");
+            DropForeignKey("dbo.Good", "RevenueItemId", "dbo.RevenueItem");
+            DropForeignKey("dbo.Good", "ExpenseItemId", "dbo.ExpenseItem");
+            DropForeignKey("dbo.MoneyAccount", "CurrencyId", "dbo.Currency");
             DropIndex("dbo.PaymentOutHead", new[] { "Contragent_Id" });
             DropIndex("dbo.PaymentOutHead", new[] { "Contract_Id" });
             DropIndex("dbo.PaymentOutHead", new[] { "Account_Id" });
@@ -183,17 +257,13 @@ namespace ITLT.Domain.Migrations
             DropIndex("dbo.MoneyTransferHead", new[] { "AccountIn_Id" });
             DropIndex("dbo.InvoiceOutRow", new[] { "Good_Id" });
             DropIndex("dbo.InvoiceOutRow", new[] { "HeadId" });
-            DropIndex("dbo.Contracts", new[] { "Contraget_Id" });
+            DropIndex("dbo.Contracts", new[] { "Contragent_Id" });
             DropIndex("dbo.InvoiceOutHead", new[] { "Contragent_Id" });
             DropIndex("dbo.InvoiceOutHead", new[] { "Contract_Id" });
             DropIndex("dbo.InvoiceInRow", new[] { "HeadId" });
+            DropIndex("dbo.Good", new[] { "ExpenseItemId" });
+            DropIndex("dbo.Good", new[] { "RevenueItemId" });
             DropIndex("dbo.MoneyAccount", new[] { "CurrencyId" });
-            AlterColumn("dbo.RevenueItem", "Name", c => c.String());
-            AlterColumn("dbo.Good", "Name", c => c.String());
-            AlterColumn("dbo.ExpenseItem", "Name", c => c.String());
-            AlterColumn("dbo.MoneyAccount", "Name", c => c.String());
-            AlterColumn("dbo.MoneyAccount", "CurrencyId", c => c.Int());
-            AlterColumn("dbo.Currency", "Name", c => c.String());
             DropTable("dbo.PaymentOutHead");
             DropTable("dbo.PaymentInHead");
             DropTable("dbo.MoneyTransferHead");
@@ -203,7 +273,11 @@ namespace ITLT.Domain.Migrations
             DropTable("dbo.InvoiceOutHead");
             DropTable("dbo.InvoiceInRow");
             DropTable("dbo.InvoiceInHead");
-            CreateIndex("dbo.MoneyAccount", "CurrencyId");
+            DropTable("dbo.RevenueItem");
+            DropTable("dbo.Good");
+            DropTable("dbo.ExpenseItem");
+            DropTable("dbo.MoneyAccount");
+            DropTable("dbo.Currency");
         }
     }
 }

@@ -71,31 +71,11 @@
     <Compile Include="Mapping\References\RevenueItemMap.cs" />
     <Compile Include="Mapping\References\GoodMap.cs" />
     <Compile Include="Mapping\References\ExpenseItemMap.cs" />
-    <Compile Include="Mapping\References\_ReferenceSyncMap.cs" />
-    <Compile Include="Mapping\References\_ReferenceMap.cs" />
-    <Compile Include="Migrations\201910211415219_Initial.cs" />
-    <Compile Include="Migrations\201910211415219_Initial.Designer.cs">
-      <DependentUpon>201910211415219_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910211506432_Refs_Currency_MoneyAccount.cs" />
-    <Compile Include="Migrations\201910211506432_Refs_Currency_MoneyAccount.Designer.cs">
-      <DependentUpon>201910211506432_Refs_Currency_MoneyAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910211508180_AccountsAdding.cs" />
-    <Compile Include="Migrations\201910211508180_AccountsAdding.Designer.cs">
-      <DependentUpon>201910211508180_AccountsAdding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910230851118_NewDocuments.cs" />
-    <Compile Include="Migrations\201910230851118_NewDocuments.Designer.cs">
-      <DependentUpon>201910230851118_NewDocuments.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910230908190_NewDocuments1.cs" />
-    <Compile Include="Migrations\201910230908190_NewDocuments1.Designer.cs">
-      <DependentUpon>201910230908190_NewDocuments1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911231414311_AlterDocuments.cs" />
-    <Compile Include="Migrations\201911231414311_AlterDocuments.Designer.cs">
-      <DependentUpon>201911231414311_AlterDocuments.cs</DependentUpon>
+    <Compile Include="Mapping\References\Basis\ReferenceSyncMap.cs" />
+    <Compile Include="Mapping\References\Basis\ReferenceMap.cs" />
+    <Compile Include="Migrations\201911231436270_AlterDocuments1.cs" />
+    <Compile Include="Migrations\201911231436270_AlterDocuments1.Designer.cs">
+      <DependentUpon>201911231436270_AlterDocuments1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,25 +94,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910211415219_Initial.resx">
-      <DependentUpon>201910211415219_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910211506432_Refs_Currency_MoneyAccount.resx">
-      <DependentUpon>201910211506432_Refs_Currency_MoneyAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910211508180_AccountsAdding.resx">
-      <DependentUpon>201910211508180_AccountsAdding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910230851118_NewDocuments.resx">
-      <DependentUpon>201910230851118_NewDocuments.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910230908190_NewDocuments1.resx">
-      <DependentUpon>201910230908190_NewDocuments1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911231414311_AlterDocuments.resx">
-      <DependentUpon>201911231414311_AlterDocuments.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911231436270_AlterDocuments1.resx">
+      <DependentUpon>201911231436270_AlterDocuments1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

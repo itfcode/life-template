@@ -7,13 +7,13 @@ namespace ITLT.Domain.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Refs_Currency_MoneyAccount : IMigrationMetadata
+    public sealed partial class AlterDocuments1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Refs_Currency_MoneyAccount));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AlterDocuments1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201910211506432_Refs_Currency_MoneyAccount"; }
+            get { return "201911231436270_AlterDocuments1"; }
         }
         
         string IMigrationMetadata.Source

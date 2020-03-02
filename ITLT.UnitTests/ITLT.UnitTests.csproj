@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DesignChecking\DesignCheckingTests.cs" />
+    <Compile Include="Extentions\DateTimeOffsetExt_Tests.cs" />
     <Compile Include="NUnitBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +59,10 @@
     <ProjectReference Include="..\ITLT.Data\ITLT.Data.csproj">
       <Project>{343811AE-903C-4627-8BEA-B1EBA97B9B7D}</Project>
       <Name>ITLT.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITLT.ExtentionMethods\ITLT.ExtentionMethods.csproj">
+      <Project>{5532febe-11ad-4475-add8-a7f5ed130db4}</Project>
+      <Name>ITLT.ExtentionMethods</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

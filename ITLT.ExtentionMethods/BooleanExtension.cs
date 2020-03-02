@@ -25,7 +25,7 @@
         /// <returns></returns>
         public static bool IfNull(this bool self, params object[] objects)
         {
-            return objects.Any(x => x == null) == self;
+            return objects.All(x => x == null) == self;
         }
 
         /// <summary>
