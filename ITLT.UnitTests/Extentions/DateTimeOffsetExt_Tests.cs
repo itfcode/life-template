@@ -45,9 +45,17 @@
         
         protected DateTimeOffset DayStartUtc => new DateTimeOffset(_year, _month, _day, 0, 0, 0, _offsetUtc);
 
+        protected DateTimeOffset MonthStart => new DateTimeOffset(_year, _month, 1, 0, 0, 0, _offset);
+
+        protected DateTimeOffset MonthStartUtc => new DateTimeOffset(_year, _month, 1, 0, 0, 0, _offsetUtc);
+
+        protected DateTimeOffset YearStart => new DateTimeOffset(_year, 1, 1, 0, 0, 0, _offset);
+
+        protected DateTimeOffset YearStartUtc => new DateTimeOffset(_year, 1, 1, 0, 0, 0, _offsetUtc);
+
         #endregion
 
-        #region Public Methods : Day Method Tests 
+        #region Day Method Tests 
 
         [Test]
         public void DayStart_Test()
@@ -100,8 +108,45 @@
 
         #endregion
 
+        #region Month Method Tests 
 
+        [Test]
+        public void MonthStart_Test() 
+        {
+            var monthStartCalculated = DateTimeOffsetTested.MonthStart();
+            var monthStartCalculatedUtc = DateTimeOffsetUtcTested.MonthStart();
 
+            Assert.IsTrue(monthStartCalculated == MonthStart, $"MonthStart : {monthStartCalculated} is not {MonthStart}");
+            Assert.IsTrue(monthStartCalculatedUtc == MonthStartUtc, $"MonthStart : {monthStartCalculatedUtc} is not {MonthStartUtc}");
+        }
 
+        [Test]
+        public void MonthStartAt_Test()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                var monthStartCalculated = DateTimeOffsetTested.MonthStartAt(i);
+                var monthStartCalculatedUtc = DateTimeOffsetUtcTested.MonthStartAt(i);
+                var monthStart = MonthStart.AddMonths(i);
+                var monthStartUtc = MonthStartUtc.AddMonths(i);
+
+                Assert.IsTrue(monthStartCalculated == monthStart, $"MonthStartAt: {monthStartCalculated} is not {monthStart}");
+                Assert.IsTrue(monthStartCalculatedUtc == monthStartUtc, $"MonthStartAt: {monthStartCalculatedUtc} is not {monthStartUtc}");
+            }
+        }
+
+        [Test]
+        public void MonthStartPrev_Test()
+        {
+
+        }
+
+        [Test]
+        public void MonthStartNext_Test()
+        {
+
+        }
+
+        #endregion
     }
 }
