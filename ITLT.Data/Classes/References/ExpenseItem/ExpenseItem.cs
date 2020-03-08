@@ -1,6 +1,5 @@
 ﻿namespace ITLT.Data.Classes.References
 {
-
     using System.Collections.Generic;
 
     /// <summary>
@@ -8,7 +7,6 @@
     /// </summary>
     public class ExpenseItem : Reference
     {
-
         /// <summary>
         /// 
         /// </summary>

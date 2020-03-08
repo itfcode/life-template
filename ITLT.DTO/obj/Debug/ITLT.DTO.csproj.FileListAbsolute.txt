@@ -1,6 +1,6 @@
 J:\BBGit\life-template\ITLT.DTO\bin\Debug\ITLT.DTO.dll
 J:\BBGit\life-template\ITLT.DTO\bin\Debug\ITLT.DTO.pdb
+J:\BBGit\life-template\ITLT.DTO\obj\Debug\ITLT.DTO.csprojAssemblyReference.cache
 J:\BBGit\life-template\ITLT.DTO\obj\Debug\ITLT.DTO.csproj.CoreCompileInputs.cache
 J:\BBGit\life-template\ITLT.DTO\obj\Debug\ITLT.DTO.dll
 J:\BBGit\life-template\ITLT.DTO\obj\Debug\ITLT.DTO.pdb
-J:\BBGit\life-template\ITLT.DTO\obj\Debug\ITLT.DTO.csprojAssemblyReference.cache

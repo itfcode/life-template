@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DesignChecking\DesignCheckingTests.cs" />
+    <Compile Include="Extentions\BooleanExt_Tests.cs" />
     <Compile Include="Extentions\DateTimeOffsetNullExt_Tests.cs" />
     <Compile Include="Extentions\DateTimeOffsetExt_Tests.cs" />
     <Compile Include="NUnitBaseTests.cs" />

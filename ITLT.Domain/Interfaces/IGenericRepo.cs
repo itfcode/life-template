@@ -1,6 +1,5 @@
 ﻿namespace ITLT.Domain.Interfaces
 {
-
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -8,7 +7,6 @@
 
     public interface IGenericRepository
     {
-
         T Get<T>(Func<T, bool> expr) where T : class, new();
 
         T Get<T>(object id) where T : class, new();

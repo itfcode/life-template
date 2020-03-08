@@ -1,6 +1,5 @@
 ﻿namespace ITLT.Data.Classes.References
 {
-
     using System;
 
     /// <summary>

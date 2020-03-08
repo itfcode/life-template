@@ -1,6 +1,5 @@
 ﻿namespace ITLT.Data.Classes
 {
-
     using ITLT.Data.Classes.References;
 
     /// <summary>
@@ -8,7 +7,6 @@
     /// </summary>
     public class MoneyTransferHead : DocumentHead
     {
-
         /// <summary>
         /// Outcoming Account 
         /// </summary>

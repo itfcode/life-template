@@ -1,14 +1,11 @@
 ﻿namespace ITLT.Domain.Mapping.References
 {
-
     using ITLT.Data.Classes.References;
 
     public class GoodMap : ReferenceMap<Good>
     {
-
         public GoodMap()
         {
-
             this.HasOptional(t => t.ExpenseItem)
                 .WithMany(t => t.Goods)
                 .HasForeignKey(t => t.ExpenseItemId)

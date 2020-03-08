@@ -201,11 +201,6 @@
 
         #region Private Methods 
 
-        protected void AreEqual(DateTimeOffset value1, DateTimeOffset value2, string methodName)
-        {
-            Assert.AreEqual(value1, value2, $"{methodName}: {value1} is not {value2}");
-        }
-
         protected DateTimeOffset GetStartOfQuarter(DateTimeOffset value)
         {
             switch (value.Month)

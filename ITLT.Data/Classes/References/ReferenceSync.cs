@@ -1,6 +1,5 @@
 ﻿namespace ITLT.Data.Classes.References
 {
-
     using ITLT.Data.Interfaces;
 
     /// <summary>
@@ -8,7 +7,6 @@
     /// </summary>
     public abstract class ReferenceSync : EntitySync, IReferenceSync
     {
-
         /// <summary>
         /// Name 
         /// </summary>

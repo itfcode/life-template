@@ -1,12 +1,10 @@
 ﻿namespace ITLT.Data.Classes.References
 {
-
     /// <summary>
     /// EN: Goods and Services;  RU: Товары и услуги
     /// </summary>
     public class Good : Reference
     {
-
         /// <summary>
         /// Id of Revenue Item by deafult 
         /// </summary>

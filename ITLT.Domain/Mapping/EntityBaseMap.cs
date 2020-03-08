@@ -1,6 +1,5 @@
 ﻿namespace ITLT.Domain.Mapping
 {
-
     using System;
     using System.Data.Entity.ModelConfiguration;
     using System.Data.Entity.ModelConfiguration.Configuration;
@@ -13,7 +12,6 @@
     /// <typeparam name="TEntity"></typeparam>
     public abstract class EntityBaseMap<TEntity> : EntityTypeConfiguration<TEntity> where TEntity : class
     {
-
         #region Private Methods 
 
         private void DefineBasic<TConfig>(TConfig property, string propName, bool isRequired = false) where TConfig : PrimitivePropertyConfiguration
