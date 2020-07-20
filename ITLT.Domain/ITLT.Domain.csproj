@@ -51,7 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementations\AuditContext.cs" />
+    <Compile Include="Implementations\DataGenericContext.cs" />
     <Compile Include="Implementations\DataContext.cs" />
+    <Compile Include="Interfaces\IAuditContext.cs" />
     <Compile Include="Interfaces\IGenericRepo.cs" />
     <Compile Include="Interfaces\IDataContext.cs" />
     <Compile Include="Mapping\Documents\Basis\DocumentHeadMap.cs" />
@@ -77,6 +80,14 @@
     <Compile Include="Migrations\201911231436270_AlterDocuments1.Designer.cs">
       <DependentUpon>201911231436270_AlterDocuments1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003291615381_Add_InvoiceInSrc.cs" />
+    <Compile Include="Migrations\202003291615381_Add_InvoiceInSrc.Designer.cs">
+      <DependentUpon>202003291615381_Add_InvoiceInSrc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003291618018_Add_Data_To_InvoiceInSrc.cs" />
+    <Compile Include="Migrations\202003291618018_Add_Data_To_InvoiceInSrc.Designer.cs">
+      <DependentUpon>202003291618018_Add_Data_To_InvoiceInSrc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DataContext\DataConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Migrations\Helper.txt" />
+    <Content Include="Resource\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITLT.Data\ITLT.Data.csproj">
@@ -96,6 +108,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201911231436270_AlterDocuments1.resx">
       <DependentUpon>201911231436270_AlterDocuments1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003291615381_Add_InvoiceInSrc.resx">
+      <DependentUpon>202003291615381_Add_InvoiceInSrc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003291618018_Add_Data_To_InvoiceInSrc.resx">
+      <DependentUpon>202003291618018_Add_Data_To_InvoiceInSrc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

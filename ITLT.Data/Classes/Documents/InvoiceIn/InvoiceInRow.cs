@@ -2,7 +2,7 @@
 { 
 
     /// <summary>
-    /// 
+    /// Входящий чек: Табличная часть
     /// </summary>
     public class InvoiceInRow : DocumentRow
     {

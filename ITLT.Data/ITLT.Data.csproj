@@ -49,8 +49,11 @@
     <Compile Include="Classes\Documents\MoneyTransfer\MoneyTransferHead.cs" />
     <Compile Include="Classes\Documents\PaymentIn\PaymentInHead.cs" />
     <Compile Include="Classes\Documents\PaymentOut\PaymentOutHead.cs" />
+    <Compile Include="Classes\Documents\Sources\InvoiceInSrc.cs" />
     <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\EntitySync.cs" />
+    <Compile Include="Classes\References\ActiveSubstance\ActiveSubstance.cs" />
+    <Compile Include="Classes\References\DietarySupplement\DietarySupplement.cs" />
     <Compile Include="Classes\References\ExpenseItem\ExpenseItem.cs" />
     <Compile Include="Classes\References\Currency\Currency.cs" />
     <Compile Include="Classes\References\MoneyAccount\MoneyAccount.cs" />

@@ -37,6 +37,8 @@
 
         IDbSet<PaymentOutHead> PaymentOutHeads { get; set; }
 
+        IDbSet<InvoiceInSrc> InvoiceInSrcs { get; set; }
+
         #endregion
 
         #region EN: Totals; RU: Итоги
