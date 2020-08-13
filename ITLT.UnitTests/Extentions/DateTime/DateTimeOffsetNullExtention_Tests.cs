@@ -224,6 +224,8 @@
         [Test]
         public void YearStartNext_Test()
         {
+            var dd = default(DateTimeOffset?);
+            this.AreEqual(dd.YearStartNext(), YearStart.Value.AddYears(1), "YearStartNext");
             this.AreEqual(DateTested.YearStartNext(), YearStart.Value.AddYears(1), "YearStartNext");
             this.AreEqual(DateTestedUtc.YearStartNext(), YearStartUtc.Value.AddYears(1), "YearStartNext");
         }
@@ -248,15 +250,15 @@
                 case 4:
                 case 5:
                 case 6:
-                    return new DateTimeOffset(value.Year, 1, 1, 0, 0, 0, value.Offset);
+                    return new DateTimeOffset(value.Year, 4, 1, 0, 0, 0, value.Offset);
                 case 7:
                 case 8:
                 case 9:
-                    return new DateTimeOffset(value.Year, 1, 1, 0, 0, 0, value.Offset);
+                    return new DateTimeOffset(value.Year, 7, 1, 0, 0, 0, value.Offset);
                 case 10:
                 case 11:
                 case 12:
-                    return new DateTimeOffset(value.Year, 1, 1, 0, 0, 0, value.Offset);
+                    return new DateTimeOffset(value.Year, 10, 1, 0, 0, 0, value.Offset);
                 default:
                     throw new Exception(@"¯\_(ツ)_/¯");
             }

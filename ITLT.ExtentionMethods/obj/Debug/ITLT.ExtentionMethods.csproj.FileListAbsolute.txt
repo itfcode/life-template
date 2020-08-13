@@ -4,3 +4,9 @@ J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.csp
 J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.csproj.CoreCompileInputs.cache
 J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.dll
 J:\BBGit\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.pdb
+J:\bb.git\life-template\ITLT.ExtentionMethods\bin\Debug\ITLT.ExtentionMethods.dll
+J:\bb.git\life-template\ITLT.ExtentionMethods\bin\Debug\ITLT.ExtentionMethods.pdb
+J:\bb.git\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.csprojAssemblyReference.cache
+J:\bb.git\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.csproj.CoreCompileInputs.cache
+J:\bb.git\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.dll
+J:\bb.git\life-template\ITLT.ExtentionMethods\obj\Debug\ITLT.ExtentionMethods.pdb

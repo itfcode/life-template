@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public static class DateTimeExtetions
+    public static class DateTimeExtentions
     {
 
         #region Consts
@@ -21,11 +21,6 @@
 
         #region Day 
 
-        /// <summary>
-        /// Start of Day.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns> Beginning of date </returns>
         public static DateTime DayStart(this DateTime self) => new DateTime(self.Year, self.Month, self.Day);
 
         public static DateTime DayStartAt(this DateTime self, int days = 0) => self.DayStart().AddDays(days);
@@ -33,6 +28,14 @@
         public static DateTime DayStartPrev(this DateTime self) => self.DayStartAt(-1);
 
         public static DateTime DayStartNext(this DateTime self) => self.DayStartAt(1);
+
+        public static DateTime DayEnd(this DateTime self) => self.DayStartNext().AddTicks(-1);
+
+        public static DateTime DayEndAt(this DateTime self, int days = 0) => self.DayStartAt(days + 1).AddTicks(-1);
+
+        public static DateTime DayEndPrev(this DateTime self) => self.DayEndAt(-1);
+
+        public static DateTime DayEndNext(this DateTime self) => self.DayEndAt(1);
 
         #endregion
 
@@ -51,6 +54,14 @@
 
         public static DateTime WeekStartNext(this DateTime self) => self.WeekStartAt(1);
 
+        public static DateTime WeekEnd(this DateTime self) => self.WeekStartNext().AddTicks(-1);
+
+        public static DateTime WeekEndAt(this DateTime self, int weeks = 0) => self.WeekStartAt(weeks + 1).AddTicks(-1);
+
+        public static DateTime WeekEndPrev(this DateTime self) => self.WeekEndAt(-1);
+
+        public static DateTime WeekEndNext(this DateTime self) => self.WeekEndAt(1);
+
         #endregion
 
         #region Month
@@ -62,6 +73,14 @@
         public static DateTime MonthStartPrev(this DateTime self) => self.MonthStartAt(-1);
 
         public static DateTime MonthStartNext(this DateTime self) => self.MonthStartAt(1);
+
+        public static DateTime MonthEnd(this DateTime self) => self.MonthEndAt();
+
+        public static DateTime MonthEndAt(this DateTime self, int months = 0) => self.MonthStartAt(months + 1).AddTicks(-1);
+
+        public static DateTime MonthEndPrev(this DateTime self) => self.MonthEndAt(-1);
+
+        public static DateTime MonthEndNext(this DateTime self) => self.MonthEndAt(1);
 
         #endregion
 
@@ -85,6 +104,14 @@
 
         public static DateTime QuarterStartNext(this DateTime self) => self.QuarterStartAt(1);
 
+        public static DateTime QuarterEnd(this DateTime self) => self.QuarterStartAt(1).AddTicks(-1);
+
+        public static DateTime QuarterEndAt(this DateTime self, int quarters) => self.QuarterStartAt(quarters + 1).AddTicks(-1);
+
+        public static DateTime QuarterEndPrev(this DateTime self) => self.QuarterEndAt(-1);
+
+        public static DateTime QuarterEndNext(this DateTime self) => self.QuarterEndAt(1);
+
         #endregion
 
         #region Year
@@ -101,68 +128,33 @@
 
         #region Checking of Day Name 
 
-        /// <summary>
-        /// Determines whether this is monday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is monday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsMonday(this DateTime self) => self.DayOfWeek == DayOfWeek.Monday;
 
-        /// <summary>
-        /// Determines whether this is tuesday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is tuesday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsTuesday(this DateTime self) => self.DayOfWeek == DayOfWeek.Tuesday;
 
-        /// <summary>
-        /// Determines whether this is wednesday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is wednesday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsWednesday(this DateTime self) => self.DayOfWeek == DayOfWeek.Wednesday;
 
-        /// <summary>
-        /// Determines whether this is thursday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is thursday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsThursday(this DateTime self) => self.DayOfWeek == DayOfWeek.Thursday;
 
-        /// <summary>
-        /// Determines whether this is friday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is friday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsFriday(this DateTime self) => self.DayOfWeek == DayOfWeek.Friday;
 
-        /// <summary>
-        /// Determines whether this is saturday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is saturday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsSaturday(this DateTime self) => self.DayOfWeek == DayOfWeek.Saturday;
 
-        /// <summary>
-        /// Determines whether this is sunday.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns>
-        ///   <c>true</c> if the specified self is sunday; otherwise, <c>false</c>.
-        /// </returns>
         public static bool IsSunday(this DateTime self) => self.DayOfWeek == DayOfWeek.Sunday;
+
+        #endregion
+
+        #region Checking of Date
+
+        public static bool IsDayStart(this DateTime self) => self == self.DayStart();
+
+        public static bool IsWeekStart(this DateTime self) => self == self.WeekStart();
+
+        public static bool IsMonthStart(this DateTime self) => self == self.MonthStart();
+
+        public static bool IsQuarterStart(this DateTime self) => self == self.QuarterStart();
+
+        public static bool IsYearStart(this DateTime self) => self == self.YearStart();
 
         #endregion
 
@@ -176,12 +168,6 @@
 
         public static DateTime ThursdayAt(this DateTime self, int weeks = 0) => self.MondayAt(weeks).AddDays(3);
 
-        /// <summary>
-        /// Determines Friday Date 
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <param name="weekNumber"></param>
-        /// <returns>Date of needed Friday</returns>
         public static DateTime FridayAt(this DateTime self, int weeks = 0) => self.MondayAt(weeks).AddDays(4);
 
         public static DateTime SaturdayAt(this DateTime self, int weeks = 0) => self.MondayAt(weeks).AddDays(5);
@@ -207,6 +193,10 @@
         public static int TotalSeconds(this DateTime self) => self.TotalMinutes() * 60 + self.Second;
 
         public static int TotalMilliseconds(this DateTime self) => self.TotalSeconds() * 1000 + self.Millisecond;
+
+        public static bool IsAM(this DateTime self) => self.TotalMinutes() < (12 * 60);
+
+        public static bool IsPM(this DateTime self) => !self.IsAM();
 
         #endregion
     }

@@ -162,12 +162,6 @@
 
         public static DateTimeOffset ThursdayAt(this DateTimeOffset self, int weeks = 0) => self.MondayAt(weeks).AddDays(3);
 
-        /// <summary>
-        /// Determines Friday Date 
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <param name="weekNumber"></param>
-        /// <returns>Date of needed Friday</returns>
         public static DateTimeOffset FridayAt(this DateTimeOffset self, int weeks = 0) => self.MondayAt(weeks).AddDays(4);
 
         public static DateTimeOffset SaturdayAt(this DateTimeOffset self, int weeks = 0) => self.MondayAt(weeks).AddDays(5);

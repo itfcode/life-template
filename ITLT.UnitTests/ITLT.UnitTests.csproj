@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="Commons\StringTests.cs" />
     <Compile Include="DesignChecking\DesignCheckingTests.cs" />
+    <Compile Include="Extentions\DateTime\BaseDateTimeExtensionMethodTests.cs" />
     <Compile Include="Extentions\BooleanExt_Tests.cs" />
-    <Compile Include="Extentions\DateTimeOffsetNullExt_Tests.cs" />
-    <Compile Include="Extentions\DateTimeOffsetExt_Tests.cs" />
+    <Compile Include="Extentions\DateTime\DateTimeExtention_Tests.cs" />
+    <Compile Include="Extentions\DateTime\DateTimeOffsetNullExtention_Tests.cs" />
+    <Compile Include="Extentions\DateTime\DateTimeOffsetExtention_Tests.cs" />
     <Compile Include="NUnitBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

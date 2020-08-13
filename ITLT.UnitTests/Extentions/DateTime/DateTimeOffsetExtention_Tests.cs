@@ -6,13 +6,14 @@
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+    using System.Reflection;
     using System.Text;
     using System.Threading.Tasks;
 
     /// <summary>
     /// Test for class DateTimeOffsetExtentions
     /// </summary>
-    public class DateTimeOffsetExt_Tests : NUnitBaseTests
+    public class DateTimeOffsetExt_Tests : BaseDateTimeExtensionMethodTests
     {
 
         #region Private Fields 
@@ -56,6 +57,31 @@
         protected DateTimeOffset YearStart => new DateTimeOffset(_year, 1, 1, 0, 0, 0, _offset);
 
         protected DateTimeOffset YearStartUtc => new DateTimeOffset(_year, 1, 1, 0, 0, 0, _offsetUtc);
+
+        #endregion
+
+        #region Constructors
+
+        public DateTimeOffsetExt_Tests() : base(typeof(DateTimeOffsetExtentions).Assembly, typeof(DateTimeOffset))
+        {
+        }
+
+        #endregion
+        
+        #region Basic 
+
+        [Test]
+        public void CheckHasAllExtentionMethods()
+        {
+            var missing = dateTimeOffsetMethods.Except(ExtentionMethods);
+
+            foreach (var item in missing)
+            {
+                Debug.WriteLine($"{item}");
+            }
+
+            Assert.IsTrue(missing.Count() == 0);
+        }
 
         #endregion
 
@@ -212,15 +238,15 @@
                 case 4:
                 case 5:
                 case 6:
-                    return new DateTimeOffset(value.Year, 1, 1, 0, 0, 0, value.Offset);
+                    return new DateTimeOffset(value.Year, 4, 1, 0, 0, 0, value.Offset);
                 case 7:
                 case 8:
                 case 9:
-                    return new DateTimeOffset(value.Year, 1, 1, 0, 0, 0, value.Offset);
+                    return new DateTimeOffset(value.Year, 7, 1, 0, 0, 0, value.Offset);
                 case 10:
                 case 11:
                 case 12:
-                    return new DateTimeOffset(value.Year, 1, 1, 0, 0, 0, value.Offset);
+                    return new DateTimeOffset(value.Year, 10, 1, 0, 0, 0, value.Offset);
                 default:
                     throw new Exception(@"¯\_(ツ)_/¯");
             }

@@ -16,11 +16,6 @@
 
         #region Day 
 
-        /// <summary>
-        /// Start of Day.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns> Beginning of date </returns>
         public static DateTimeOffset? DayStartAt(this DateTimeOffset? self, int days = 0) => self.TryValue(x => x.DayStartAt(days));
 
         public static DateTimeOffset? DayStart(this DateTimeOffset? self) => self.DayStartAt(0);

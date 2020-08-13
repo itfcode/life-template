@@ -16,11 +16,6 @@
 
         #region Day 
 
-        /// <summary>
-        /// Start of Day.
-        /// </summary>
-        /// <param name="self">The self.</param>
-        /// <returns> Beginning of date </returns>
         public static DateTime? DayStartAt(this DateTime? self, int days = 0) => self.TryValue(x => x.DayStartAt(days));
 
         public static DateTime? DayStart(this DateTime? self) => self.DayStartAt(0);
@@ -78,5 +73,6 @@
         public static DateTime? YearStartNext(this DateTime? self) => self.YearStartAt(1);
 
         #endregion
+
     }
 }
